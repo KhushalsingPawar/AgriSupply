@@ -30,8 +30,6 @@ AgriSupply is a full-stack B2B platform designed to streamline agricultural prod
 3. Buyers browse products and place orders  
 4. Orders are processed and tracked through the system  
 
-## 📷 Screenshots
-> Add your UI screenshots here (Product Page, Orders, Dashboard)
 
 ## ▶️ Installation & Setup
 
