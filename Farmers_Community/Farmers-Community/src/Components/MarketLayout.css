@@ -1,0 +1,33 @@
+.market-container {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 80px;
+    /* space below navbar */
+    color: white;
+    transition: background-image 1s ease-in-out;
+    /* smooth change */
+}
+
+.market-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.blur {
+    filter: blur(4px);
+    pointer-events: none;
+}
+
+.add-btn {
+    padding: 12px 20px;
+    background: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}

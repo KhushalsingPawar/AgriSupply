@@ -1,0 +1,165 @@
+/* Basic navbar style */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(142, 190, 142, 0.9);
+    /* dark green for agriculture */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    color: white;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* Links */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ffd700;
+    /* gold hover effect */
+}
+
+
+/* Buttons for login/signup */
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #b7ccb7;
+    /* forest green */
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #32CD32;
+    /* lime green on hover */
+}
+
+.signup {
+    background-color: #FFD700;
+    color: black;
+}
+
+.signup:hover {
+    background-color: #FFC107;
+}
+
+
+/* Burger menu for mobile */
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.nav-links li.dropdown {
+    position: relative;
+    /* make dropdown absolute relative to li */
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    /* appear below parent li */
+    left: 0;
+    background-color: #bee5c1;
+    min-width: 150px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+
+/* Show dropdown when hover */
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #1ff59c;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+
+/* Responsive for mobile */
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 70px;
+        background-color: rgba(34, 139, 34, 0.95);
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        padding-top: 50px;
+    }
+    .nav-links.active {
+        transform: translateX(0);
+    }
+    .burger {
+        display: flex;
+    }
+}

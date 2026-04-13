@@ -1,0 +1,23 @@
+.bg-fixed {
+    position: fixed;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.home-container {
+    min-height: 100vh;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 60px;
+    border-radius: 12px;
+    color: white;
+    backdrop-filter: blur(4px);
+}
