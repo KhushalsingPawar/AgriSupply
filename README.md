@@ -1,7 +1,7 @@
 
 ---
 
-# ✅ 2. **AgriSupply – Final README (Best Version)**
+# **AgriSupply**
 
 ```md id="readme2"
 # 🌾 AgriSupply – B2B Agricultural Supply Platform
