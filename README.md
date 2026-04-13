@@ -37,3 +37,9 @@ AgriSupply is a full-stack B2B platform designed to streamline agricultural prod
 ```bash
 cd backend
 mvn spring-boot:run
+
+### Backend
+```bash
+cd frontend
+npm install
+npm start
