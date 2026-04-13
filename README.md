@@ -1,7 +1,7 @@
 
 ---
 
-# **AgriSupply**
+# **AgriSupply **
 
 ```md id="readme2"
 # 🌾 AgriSupply – B2B Agricultural Supply Platform
@@ -38,7 +38,7 @@ AgriSupply is a full-stack B2B platform designed to streamline agricultural prod
 cd backend
 mvn spring-boot:run
 
-### Backend
+### Frontend
 ```bash
 cd frontend
 npm install
